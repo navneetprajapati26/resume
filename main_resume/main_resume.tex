@@ -1,0 +1,376 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape NAVNEET PRAJAPATI} \\ \vspace{1pt}
+    Azamgarh,Uttar Pradesh \\ \vspace{1pt}
+    \small 
+    
+    \href{tel:+91 7271088606}{ \raisebox{-0.1\height}\faPhone\ \underline{+91 7271088606} ~} \href{navneetprajapati26@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{navneetprajapati26@gmail.com}~}
+    \href{https://www.linkedin.com/in/navneetprajapati26/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin}} ~
+    \href{https://github.com/navneetprajapati26}{\raisebox{-0.2\height}\faGithub\ \underline{github}} ~\href{https://www.youtube.com/@asyncapp}{\raisebox{-0.2\height}\faYoutube\ \underline{Youtube}} ~
+    
+    % \href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    
+    \vspace{-pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajkiya Engineering College Sonbhadra}{07 2020 -- 07 2024}
+      {Bachelor of technology (Computer science) }{Sonbhadra, India}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SDS Intercollege Varanasi}{2018 -- 2020}
+      {intermediate (PCM)  }{Varanasi,India}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Operating Systems
+                % \item Network Security
+                \item DBMS
+                \item OOPS Concept
+                \item Backend Development 
+                \item Android Development
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Dart,JavaScript,Python, Java, C, C++,}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Android Studio,Intellij}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Flutter, Bloc, Riverpod, Provider, GetX Linux, GitHub, NodeJS, ExpressJS, Git, MongoDB, DynamoDB, serverless framework, AWS lambda, Firebase}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCES }
+
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Internshal\href{https://subspace.money/}{\raisebox{-0.1\height}\faExternalLink }}{fab 2024 - Present} 
+      {\underline{SDE Internship}}{(On-site) Gurugram}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Here my role is converting Android (java written) in flutter \textbf{Technologies: Flutter (Riverpod), flutter-Animation, API integration, }}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Visario\href{https://www.myvisario.com/}{\raisebox{-0.1\height}\faExternalLink }}{Sep 2023 - fab 2024} 
+      {\underline{Full Stack Developer}}{(Remote)Amsterdam-Netherlands}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Here my role is Development of applications using  \textbf{Technologies: Flutter (Riverpod), Node.js, AWS (Cognito, Lambda, API Gateway, DynamoDB, S3 bucket)}}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Subspace\href{https://subspace.money/}{\raisebox{-0.1\height}\faExternalLink }}{Oct 2023 - Dec 2023} 
+      {\underline{SDE Internship}}{(Remote) Bengaluru}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Here my role is Development of applications using  \textbf{Technologies: Flutter (Bloc), flutter-Animation, GraphQL API integration Node.js, }}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+
+
+   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AsyncApp YouTube \href{https://www.youtube.com/@asyncapp}{\raisebox{-0.1\height}\faExternalLink }}{ Feb 2023 - Present} 
+      {\underline{Educator}}{My own YouTube chanel}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Creating and publishing educational content in video format.
+Leading the development of new projects and documentation.
+ \textbf{Flutter, Node.js, AWS}}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {GradClabs \href{https://gradclubs.app/#/}{\raisebox{-0.1\height}\faExternalLink }}{ Jun 2023 - Aug 2023} 
+      {\underline{Internship}}{(Remote) Canda}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Here my role was developed a website using Flutter.
+Implemented a full Chatbot system and WhatsApp automation used technology: \textbf{ Flutter (Provider), Node.js, AWS (ES2 Instance), Firebase (functions, hosting, storage)
+.}}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sofodel \href{https://www.sofodel.com/}{\raisebox{-0.1\height}\faExternalLink }}{Oct 2022 - Jun 2023} 
+      {\underline{Internship}}{(Remote)Delhi, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Here my role was Focused on UI development.
+Assisted in the building and deployment of projects. using
+ \textbf{Flutter (Provider, GetX), Node.js}}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{-3pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://pub.dev/packages/utility_flutter}{\textbf{\large{\underline{Utility Flutter for Pub.dev}}} \href{https://pub.dev/packages/utility_flutter}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Flutter, Dart, HTTP, Shared Preferences}}}{10 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Open-source package simplifying HTTP and shared preferences operations in Flutter. Features include default headers, request timeouts, standardized error responses, and local variable storage.}}
+\resumeItem{\textcolor{accent}{\href{https://pub.dev/packages/utility_flutter}{\underline{\normalsize{See on Pub.dev}}}}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\textbf{\large{\underline{Digital Painting Canvas and Whiteboard}}} \href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Flutter, Riverpod, Hive DB, CustomPainter}}}{09 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Digital whiteboard for Android TV/Windows PC. Drawing platform for Android/iOS with multiple drawing saves and children’s templates.}}
+\resumeItem{\textcolor{accent}{\href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\underline{\normalsize{Live App}}}}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app}{\textbf{\large{\underline{Bill Generator Application}}} \href{https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Provider, Hive DB}}}{08 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Manages shop info and bills (create, update, delete, share, PDF). Integrated customer database and archived bill access.}}
+\resumeItem{\textcolor{accent}{\href{https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app}{\underline{\normalsize{Download}}}}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+
+\resumeProjectHeading
+{\href{https://youtu.be/aWNm1VBFQII?si=b1k3bZqeIRd4xkF6}{\textbf{\large{\underline{Full-Stack Blogging Platform}}} \href{https://youtu.be/aWNm1VBFQII?si=b1k3bZqeIRd4xkF6}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Flutter, Node.js}}}{08 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{User authentication and blog management (post, edit, delete). Cross-user blog visibility. Accompanied by instructional YouTube series.}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/navneetprajapati26/file_reducer}{\textbf{\large{\underline{File Size Reducer}}} \href{https://github.com/navneetprajapati26/file_reducer}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{BLoC, Go Routes, Express.js}}}{09 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Reduces file quality as per user preference and retrieves files post-compression.}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/navneetprajapati26/chat_app}{\textbf{\large{\underline{Real-Time Chatting Application}}} \href{https://github.com/navneetprajapati26/chat_app}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{GetX, Socket.io}}}{07 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Supports real-time group chats with user-specific nicknames.}}
+\resumeItemListEnd
+
+% \resumeProjectHeading
+% {\href{link.co}{\textbf{\large{\underline{WhatsApp AI Automation}}} \href{link.co}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{whatsapp-web.js, Axios, GPT API, AWS EC2}}}{06 2023}
+% \resumeItemListStart
+% \resumeItem{\normalsize{Transforms a regular WhatsApp number into an AI-powered chatbot.}}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\href{https://play.google.com/store/apps/details?id=com.mylight.snake_game}{\textbf{\large{\underline{Scheduled Email Sending API}}} \href{https://play.google.com/store/apps/details?id=com.mylight.snake_game}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{NodeMailer, Node-cron}}}{05 2023}
+% \resumeItemListStart
+% \resumeItem{\normalsize{Allows customizable email scheduling with user-defined intervals.}}
+% \resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.mylight.wallApp}{\textbf{\large{\underline{Dynamic Wallpaper Application}}} \href{https://play.google.com/store/apps/details?id=com.mylight.wallApp}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Provider, Wallpaper API}}}{04 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Features extensive wallpaper browsing, direct setting, and search functionality.}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.mylight.snake_game}{\textbf{\large{\underline{Classic Snake Game}}} \href{https://play.google.com/store/apps/details?id=com.mylight.snake_game}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Flutter}}}{11 2022}
+\resumeItemListStart
+\resumeItem{\normalsize{Classic snake game with real-time score and high-score tracking.}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------INVOLVEMENT---------------
+\section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        
+            \resumeItemListStart
+            
+                \resumeItem{ \textbf{Team leading quality:}} \normalsize{\normalsize{I am class representative of my branch in my college , and also I am head of skit department in our college. }}
+                
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+ 
+
+
+\end{document}
