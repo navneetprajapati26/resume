@@ -1,0 +1,387 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape NAVNEET PRAJAPATI} \\ \vspace{1pt}
+    Gurugram, Haryana \\ \vspace{1pt}
+    \small 
+    
+    \href{tel:+91 7271088606}{ \raisebox{-0.1\height}\faPhone\ \underline{+91 7271088606} ~} \href{navneetprajapati26@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{navneetprajapati26@gmail.com}~}
+    \href{https://www.linkedin.com/in/navneetprajapati26/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}} ~
+    \href{https://github.com/navneetprajapati26}{\raisebox{-0.2\height}\faGithub\ \underline{github}} ~
+    \href{https://www.youtube.com/@asyncapp}{\raisebox{-0.2\height}\faYoutube\ \underline{Youtube}} ~
+    \href{https://navneet.asyncapps.com/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    
+    \vspace{-5pt}
+\end{center}
+
+%-------PROFESSIONAL SUMMARY-------
+\section{PROFESSIONAL SUMMARY}
+\resumeItemListStart
+\resumeItem{\normalsize{Seasoned Flutter Developer with 2+ years of experience building cross-platform applications with a focus on responsive UI, clean architecture, and state management. Expertise in implementing Riverpod, Bloc, and Provider for complex app state management. Proficient in full-stack development with Go and Node.js backends. Demonstrated success in delivering production-ready applications for iOS, Android, and web platforms. Experience with integrating payment gateways, REST APIs, and database systems.}}
+\resumeItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Dart, Go, JavaScript, Python, Java}} \\
+     \textbf{\normalsize{Flutter Expertise:}}{ \normalsize{State Management (Riverpod, Bloc, Provider, GetX), Custom Animations, UI/UX Design, Cross-Platform Development, Navigation 2.0, Platform Channels}} \\
+     \textbf{\normalsize{Backend:}}{ \normalsize{Go (GIN, GORM), Node.js, Express.js, RESTful APIs, GraphQL}} \\
+     \textbf{\normalsize{Databases:}}{ \normalsize{PostgreSQL, MySQL, SQLite, Firebase, MongoDB, DynamoDB}} \\
+     \textbf{\normalsize{DevOps/Tools:}}{ \normalsize{Git, GitHub Actions, AWS (Lambda, API Gateway, S3), Firebase, VS Code, Android Studio}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCES}
+
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Internshala\href{https://internshala.com/}{\raisebox{-0.1\height}\faLink }}{Feb 2024 - Present} 
+      {\underline{Associate Software Engineer}}{(On-site) Gurugram}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Promoted from intern to full-time role based on exceptional Flutter development performance}}
+        \resumeItem{\normalsize{Designed and implemented iOS Flutter application architecture using Riverpod with clean architecture principles (Repository Pattern, Use Cases, and Domain-Driven Design)}}
+        \resumeItem{\normalsize{Developed a robust centralized cookie management system for API interactions using Dio, improving authentication workflows and security}}
+        \resumeItem{\normalsize{Created background API calling system with retry mechanisms and offline-first capabilities}}
+        \resumeItem{\normalsize{Built reusable UI components with complex state management, improving development velocity by 30\%}}
+        \resumeItem{\normalsize{Implemented complex in-app purchase flow with proper state handling and error recovery mechanisms}}
+        \resumeItem{\normalsize{\textbf{Technologies: Flutter, Riverpod, Clean Architecture, Dio, iOS Development, REST APIs}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Visario\href{https://www.myvisario.com/}{\raisebox{-0.1\height}\faLink }}{Sep 2023 - Feb 2024} 
+      {\underline{Full Stack Developer}}{(Remote) Amsterdam-Netherlands}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Designed and developed full-stack visa application platform with Flutter frontend and Go backend}}
+        \resumeItem{\normalsize{Implemented complex multi-step user onboarding process with form validation, image uploads, and document processing}}
+        \resumeItem{\normalsize{Built responsive and adaptive UI components that work seamlessly across mobile, tablet, and web}}
+        \resumeItem{\normalsize{Integrated Razorpay payment gateway with secure transaction handling and receipt generation}}
+        \resumeItem{\normalsize{Utilized Flutter's Riverpod for state management, ensuring clean separation of UI and business logic}}
+        \resumeItem{\normalsize{\textbf{Technologies: Flutter (Riverpod), Go, AWS (Cognito, Lambda, API Gateway, DynamoDB, S3), RESTful APIs}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Subspace\href{https://subspace.money/}{\raisebox{-0.1\height}\faLink }}{Oct 2023 - Dec 2023} 
+      {\underline{SDE Internship}}{(Remote) Bengaluru}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Developed Flutter applications with Bloc pattern for predictable state management}}
+        \resumeItem{\normalsize{Created complex UI animations and transitions for enhanced user experience}}
+        \resumeItem{\normalsize{Implemented GraphQL API integration for efficient data fetching and real-time updates}}
+        \resumeItem{\normalsize{Optimized app performance through widget rebuilding optimization and memory management}}
+        \resumeItem{\normalsize{\textbf{Technologies: Flutter (Bloc), Flutter Animation, GraphQL, Node.js}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {GradClabs \href{https://gradclubs.app/}{\raisebox{-0.1\height}\faLink }}{ Jun 2023 - Aug 2023} 
+      {\underline{Flutter Developer Internship}}{(Remote) Canada}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Developed responsive Flutter web application with adaptive layouts for different screen sizes}}
+        \resumeItem{\normalsize{Implemented complete chatbot system with natural language processing integration}}
+        \resumeItem{\normalsize{Created WhatsApp automation system for user notifications and engagement}}
+        \resumeItem{\normalsize{Built and deployed application using Firebase for authentication, database, and hosting}}
+        \resumeItem{\normalsize{\textbf{Technologies: Flutter (Provider), Node.js, AWS (EC2), Firebase (Functions, Hosting, Storage)}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sofodel \href{https://www.sofodel.com/}{\raisebox{-0.1\height}\faLink }}{Oct 2022 - Jun 2023} 
+      {\underline{Flutter Developer Internship}}{(Remote) Delhi, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Designed and implemented UI components following material design guidelines}}
+        \resumeItem{\normalsize{Built responsive layouts that adapt to different screen sizes and orientations}}
+        \resumeItem{\normalsize{Collaborated in cross-functional teams for application development and deployment}}
+        \resumeItem{\normalsize{Utilized Provider and GetX state management solutions for various applications}}
+        \resumeItem{\normalsize{\textbf{Technologies: Flutter (Provider, GetX), Node.js, RESTful APIs}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {AsyncApp YouTube \href{https://www.youtube.com/@asyncapp}{\raisebox{-0.1\height}\faLink }}{ Feb 2023 - Present} 
+      {\underline{Flutter and Full-Stack Educator}}{YouTube Channel}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Create educational content focused on Flutter development, state management, and app architecture}}
+        \resumeItem{\normalsize{Produce tutorial series on integrating Flutter with backend technologies like Go and Node.js}}
+        \resumeItem{\normalsize{Demonstrate implementation of advanced Flutter features including animations, custom painters, and complex widgets}}
+        \resumeItem{\normalsize{Share knowledge on deployment strategies and cloud integration with AWS and Firebase}}
+        \resumeItem{\normalsize{\textbf{Technologies: Flutter, Go, Node.js, AWS, Firebase}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajkiya Engineering College Sonbhadra}{07 2020 -- 07 2024}
+      {Bachelor of Technology (Computer Science)}{Sonbhadra, India}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SDS Intercollege Varanasi}{2018 -- 2020}
+      {Intermediate (PCM)}{Varanasi, India}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / KNOWLEDGE AREAS}
+    \begin{multicols}{4}
+        \begin{itemize}[itemsep=-2pt, parsep=5pt]
+            \item Data Structures \& Algorithms
+            \item Mobile App Development
+            \item UI/UX Design Principles
+            \item Software Architecture
+            \item REST API Development
+            \item Cross-platform Development
+            \item State Management Patterns
+            \item Database Systems
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{-3pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.asyncapps.parcha.app}{\textbf{\large{\underline{Parcha (Invoice \& Inventory System)}}} \href{https://play.google.com/store/apps/details?id=com.asyncapps.parcha.app}{\raisebox{-0.1\height}\faLink }} $|$ \large{\underline{Flutter (Riverpod), SQLite, IndexDB}}}{12 2024 -- 01 2025}
+\resumeItemListStart
+\resumeItem{\normalsize{Built cross-platform solution using Flutter that works seamlessly across desktop, mobile, and web platforms}}
+\resumeItem{\normalsize{Implemented complex state management using Riverpod for predictable application behavior}}
+\resumeItem{\normalsize{Developed offline-first architecture with SQLite on mobile and IndexDB on web for local data persistence}}
+\resumeItem{\normalsize{Created custom PDF invoice generation with integrated UPI payment QR codes}}
+\resumeItem{\normalsize{Built responsive UI with multiple themes and layout adaptations for different device sizes}}
+\resumeItem{\textcolor{accent}{\href{https://play.google.com/store/apps/details?id=com.asyncapps.parcha.app}{\underline{\normalsize{Live App}}}}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\textbf{\large{\underline{Restaurant Management Suite}}} $|$ \large{\underline{Go (GIN, GORM), PostgreSQL, Flutter, React}}}{Present}
+\resumeItemListStart
+\resumeItem{\normalsize{Developing Flutter admin dashboard with complex UI components and real-time data visualization}}
+\resumeItem{\normalsize{Implementing advanced state management for multi-outlet management with Riverpod}}
+\resumeItem{\normalsize{Building responsive UIs that adapt to mobile, tablet, and desktop form factors}}
+\resumeItem{\normalsize{Creating custom Flutter widgets for tableside ordering and menu management}}
+\resumeItem{\normalsize{Integrating with RESTful API backend built with Go for real-time data synchronization}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\href{https://pub.dev/packages/utility_flutter}{\textbf{\large{\underline{Utility Flutter for Pub.dev}}} \href{https://pub.dev/packages/utility_flutter}{\raisebox{-0.1\height}\faLink }} $|$ \large{\underline{Flutter, Dart, HTTP, Shared Preferences}}}{10 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Published Flutter package with over 500+ downloads on pub.dev used by developers worldwide}}
+\resumeItem{\normalsize{Implemented simplified HTTP client with standardized request/response handling and retry mechanisms}}
+\resumeItem{\normalsize{Created easy-to-use shared preferences wrapper for local storage with type safety}}
+\resumeItem{\normalsize{Wrote comprehensive documentation and examples for developer adoption}}
+\resumeItem{\textcolor{accent}{\href{https://pub.dev/packages/utility_flutter}{\underline{\normalsize{See on Pub.dev}}}}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\textbf{\large{\underline{Shyampatt (Painting Canvas and Whiteboard)}}} \href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\raisebox{-0.1\height}\faLink }} $|$ \large{\underline{Flutter, Riverpod, Hive DB, CustomPainter}}}{09 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Developed cross-platform drawing application with Flutter's CustomPainter for real-time drawing capabilities}}
+\resumeItem{\normalsize{Implemented platform-specific code for Android TV, Windows PC, and mobile devices}}
+\resumeItem{\normalsize{Used Riverpod for state management of complex drawing state (strokes, colors, brush sizes)}}
+\resumeItem{\normalsize{Created persistent storage system using Hive DB for saving and loading drawings}}
+\resumeItem{\textcolor{accent}{\href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\underline{\normalsize{Live App}}}}}
+\resumeItemListEnd
+\vspace{-13pt}
+
+\resumeProjectHeading
+{\href{https://github.com/navneetprajapati26/file_reducer}{\textbf{\large{\underline{File Size Reducer}}} \href{https://github.com/navneetprajapati26/file_reducer}{\raisebox{-0.1\height}\faLink }} $|$ \large{\underline{Flutter, BLoC, Go Routes, Express.js}}}{09 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Built Flutter application with BLoC pattern for predictable state management}}
+\resumeItem{\normalsize{Implemented Go Routes for declarative routing and deep linking support}}
+\resumeItem{\normalsize{Created custom UI for file upload, quality selection, and download interfaces}}
+\resumeItem{\normalsize{Integrated with Express.js backend for file processing and compression}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.mylight.wallApp}{\textbf{\large{\underline{Dynamic Wallpaper Application}}} \href{https://play.google.com/store/apps/details?id=com.mylight.wallApp}{\raisebox{-0.1\height}\faLink }} $|$ \large{\underline{Flutter, Provider, REST API Integration}}}{04 2023}
+\resumeItemListStart
+\resumeItem{\normalsize{Created Flutter application with Provider state management for wallpaper browsing and setting}}
+\resumeItem{\normalsize{Implemented platform-specific code for setting wallpapers on Android devices}}
+\resumeItem{\normalsize{Built custom grid layout with lazy loading and image caching for optimal performance}}
+\resumeItem{\normalsize{Integrated with REST API for fetching wallpaper collections with search functionality}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Flutter Development Bootcamp with Dart}{Udemy} 
+      {}{} 
+      \resumeItemListStart
+        \resumeItem{\normalsize{Comprehensive Flutter development course covering widgets, state management, and app architecture}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+ \vspace{-11pt}
+ 
+\section{LEADERSHIP}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Class Representative}{Rajkiya Engineering College} 
+      {}{} 
+      \resumeItemListStart
+        \resumeItem{\normalsize{Served as Class Representative for Computer Science branch, coordinating between students and faculty}}
+        \resumeItem{\normalsize{Led skit department for college cultural events, demonstrating teamwork and creative direction}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+ \vspace{-11pt}
+
+\end{document}

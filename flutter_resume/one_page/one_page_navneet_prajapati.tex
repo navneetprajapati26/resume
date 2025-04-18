@@ -1,0 +1,280 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-4pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape NAVNEET PRAJAPATI} \\ \vspace{1pt}
+    Gurugram, Haryana \\ \vspace{1pt}
+    \small 
+    
+    \href{tel:+91 7271088606}{ \raisebox{-0.1\height}\faPhone\ \underline{+91 7271088606} ~} \href{navneetprajapati26@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{navneetprajapati26@gmail.com}~}
+    \href{https://www.linkedin.com/in/navneetprajapati26/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}} ~
+    \href{https://github.com/navneetprajapati26}{\raisebox{-0.2\height}\faGithub\ \underline{github}} ~
+    \href{https://www.youtube.com/@asyncapp}{\raisebox{-0.2\height}\faYoutube\ \underline{Youtube}} ~
+    \href{https://navneet.asyncapps.com/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    
+    \vspace{-7pt}
+\end{center}
+
+%-------PROFESSIONAL SUMMARY-------
+\section{PROFESSIONAL SUMMARY}
+\resumeItemListStart
+\resumeItem{\small{Flutter Developer with 2+ years expertise in cross-platform development focusing on responsive UI, clean architecture, and advanced state management (Riverpod, Bloc, Provider). Full-stack capabilities with Go/Node.js backends. Track record of shipping production apps for iOS, Android and web with robust performance optimization and offline-first architecture.}}
+\resumeItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\small{Flutter:}}{ \small{State Management (Riverpod, Bloc, Provider), Clean Architecture, Custom Animations/Painters, Navigation 2.0}} \\
+     \textbf{\small{Languages \& Tools:}}{ \small{Dart, Go (GIN), JavaScript (Node.js), RESTful APIs, AWS, Firebase, SQLite, PostgreSQL}}
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCES}
+
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://internshala.com/}{\underline{Internshala}}}{Feb 2024 - Present} 
+      {\underline{Associate Software Engineer}}{(On-site) Gurugram}
+      \resumeItemListStart
+        \resumeItem{\small{Architected iOS Flutter application using Riverpod with clean architecture principles}}
+        \resumeItem{\small{Implemented cookie management and API calling system with retry mechanisms}}
+        \resumeItem{\small{Developed reusable UI component library, increasing development velocity by 30\%}}
+        \resumeItem{\small{Implemented complex in-app purchase flow with proper state handling and error recovery mechanisms}}
+        \resumeItem{\small{\textbf{Technologies:} Flutter, Riverpod, Clean Architecture, Dio, iOS Development}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.myvisario.com/}{\underline{Visario}}}{Sep 2023 - Feb 2024} 
+      {\underline{Full Stack Developer}}{(Remote) Amsterdam}
+      \resumeItemListStart
+        \resumeItem{\small{Built visa application platform with Flutter frontend and Go backend on AWS}}
+        \resumeItem{\small{Designed multi-step flows with document processing and cross-platform UI adaptation}}
+        \resumeItem{\small{Integrated Razorpay payment gateway with transaction validation systems}}
+        \resumeItem{\small{\textbf{Technologies:} Flutter (Riverpod), Go, AWS (Cognito, Lambda, API Gateway, DynamoDB)}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://subspace.money/}{\underline{Subspace}}}{Oct 2023 - Dec 2023} 
+      {\underline{SDE Intern}}{(Remote) Bengaluru}
+      \resumeItemListStart
+        \resumeItem{\small{Built Flutter applications with Bloc pattern for predictable state flows}}
+        \resumeItem{\small{Optimized memory usage through efficient widget rebuilding and render optimization}}
+        \resumeItem{\small{Implemented GraphQL for efficient real-time data synchronization}}
+        \resumeItem{\small{\textbf{Technologies:} Flutter (Bloc), GraphQL, Performance Optimization}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.youtube.com/@asyncapp}{\underline{AsyncApp YouTube}}}{Feb 2023 - Present} 
+      {\underline{Flutter and Full-Stack Educator}}{YouTube Channel}
+      \resumeItemListStart
+        \resumeItem{\small{Create educational content on Flutter development, state management, and architecture}}
+        \resumeItem{\small{Demonstrate complex features including animations, painters, and platform integration}}
+        \resumeItem{\small{\textbf{Technologies:} Flutter, Go, Node.js, AWS, Firebase, Cross-Platform Development}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajkiya Engineering College Sonbhadra}{07 2020 -- 07 2024}
+      {Bachelor of Technology (Computer Science)}{Sonbhadra, India}
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.asyncapps.parcha.app}{\textbf{\large{\underline{Parcha (Invoice \& Inventory)}}} \raisebox{-0.05\height}\faLink\scriptsize} $|$ \large{\underline{Flutter, Riverpod, SQLite}}}{12 2023}
+\resumeItemListStart
+\resumeItem{\small{Built cross-platform app for desktop, mobile, and web with offline-first architecture using SQLite/IndexDB}}
+\resumeItem{\small{Implemented custom PDF invoice generation with payment solutions and responsive UI}}
+\resumeItem{\small{\href{https://play.google.com/store/apps/details?id=com.asyncapps.parcha.app}{\underline{\small{Live App}}}}}
+\resumeItemListEnd
+\vspace{-8pt}
+
+\resumeProjectHeading
+{\href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\textbf{\large{\underline{Shyampatt (Drawing App)}}} \raisebox{-0.05\height}\faLink\scriptsize} $|$ \large{\underline{Flutter, Riverpod, CustomPainter}}}{09 2023}
+\resumeItemListStart
+\resumeItem{\small{Created cross-platform drawing app using CustomPainter with persistent state management}}
+\resumeItem{\small{Implemented gesture recognition for natural drawing experience across devices}}
+\resumeItem{\small{\href{https://play.google.com/store/apps/details?id=com.mylight.shyampatt}{\underline{\small{Live App}}}}}
+\resumeItemListEnd
+\vspace{-8pt}
+
+\resumeProjectHeading
+{\href{https://pub.dev/packages/utility_flutter}{\textbf{\large{\underline{Utility Flutter Package}}} \raisebox{-0.05\height}\faLink\scriptsize} $|$ \large{\underline{Flutter, Dart, HTTP}}}{10 2023}
+\resumeItemListStart
+\resumeItem{\small{Published Flutter package (500+ downloads) with HTTP client and local storage utilities}}
+\resumeItem{\small{Implemented standardized API request handling with built-in retry mechanisms}}
+\resumeItem{\small{\href{https://pub.dev/packages/utility_flutter}{\underline{\small{See on Pub.dev}}}}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+
+\section{CERTIFICATIONS \& ACHIEVEMENTS}
+  \resumeItemListStart
+    \resumeItem{\small{\textbf{Flutter Development Bootcamp with Dart} - Course on widgets, state management, and architecture}}
+    \resumeItem{\small{\textbf{Published Applications} - Multiple apps on Google Play Store with 10K+ combined downloads}}
+    \resumeItem{\small{\textbf{Technical Leadership} - Led mobile teams and mentored developers through YouTube channel}}
+  \resumeItemListEnd
+ \vspace{-8pt}
+
+\end{document}
